@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>{{question_name}}</h2>
+<form>
+    <ol>
+        {%for i in text%}
+            <li>
+                <label for="{{i}}"> <tr>{{i}}</tr>
+                    <tr><input type="radio" id="{{i}}" name="vote" value="{{i.id}}"></tr>
+                </label>
+            </li>
+        {%endfor%}
+    </ol>
+    <input type="submit" value="ovoz berish">
+</form>
+
+</body>
+</html>

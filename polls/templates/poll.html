@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls</title>
+</head>
+<body>
+    <h2>Questions:</h2>
+    {%for i in ques%}
+    <li>
+        <a href="http://127.0.0.1:8000/polls/ans/{{i.id}}">{{i.text}}</a>
+    </li>
+    {%endfor%}
+</body>
+</html>
